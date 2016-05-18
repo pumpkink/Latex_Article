@@ -188,12 +188,11 @@ The second condition is equivalent to
 	\item[(2)$'$] If $a<l$, then $a$ is not an upper bound of $A$.
 \end{enumerate}
 Let’s review the notation
-{\renewcommand{\labelitemi}{$\bullet$}
 \begin{itemize}
 	\item $(0,1)$ is an \emph{open} interval
 	\item $[0,1]$ is a \emph{closed} interval
-\end{itemize}}
-\subsubsection{Rows and Columns}
+\end{itemize}
+
 
 
 

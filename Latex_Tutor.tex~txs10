@@ -149,51 +149,18 @@ One should keep the following in mind when using \TeX
              \end{itemize}}
 	\item Second main item with Black triangle right
 	\end{itemize}
-Being a program, \TeX\ offers a high degree of flexibility.\\
+Being a program, \TeX\ offers a high degree of flexibility.
 
-\noindent Such a numbered list is produced by the enumerate environment in \LaTeX. The above list
+Such a numbered list is produced by the enumerate environment in LATEX. The above list
 was produced by the following source.
 \begin{enumerate}
 	\item prepare a source file with the extension "tex"
-    \item Compile it with \LaTeX to produce a "dvi" file
-    \item Print the document using a "dvi" driver
-\end{enumerate}
-The three basic steps in producing a printed document using \LaTeX\ are as follows:
-\begin{enumerate}
-	\item  First Item
-	\item  Second Item
-	\begin{enumerate}
-		\item Use a previewer 
-		\item Edit the source if needed
-		\item Recompile
-	\end{enumerate}
-	\item Third Item
-\end{enumerate}
-\subsubsection{Descriptions and Definitions}
-There is a example for the definitions layout.
-\begin{description}
-	\item[\TeX] A typesetting program
-	\item[Emacs] A text editor and also
-	\item[AbiWord] A word processor
-	\item[$l$]
-\end{description}
-The real number $l$ is the least upper bound of the
-set $A$ if it satisfies the following conditions
-\begin{enumerate}
-	\item[(1)] $l$ is an upper bound of $A$
-	\item[(2)] if $u$ is an upper bound of $A$, then $l\le u$
-\end{enumerate}
-The second condition is equivalent to
-\begin{enumerate}
-	\item[(2)$'$] If $a<l$, then $a$ is not an upper bound of $A$.
-\end{enumerate}
-Let’s review the notation
-{\renewcommand{\labelitemi}{$\bullet$}
-\begin{itemize}
-	\item $(0,1)$ is an \emph{open} interval
-	\item $[0,1]$ is a \emph{closed} interval
-\end{itemize}}
-\subsubsection{Rows and Columns}
+
+
+
+
+
+
 
 
 

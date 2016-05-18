@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.13)  18 MAY 2016 10:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.13)  18 MAY 2016 12:50
 entering extended mode
 **./Latex_Tutor.tex
 (Latex_Tutor.tex
@@ -21,54 +21,135 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (Latex_Tutor.aux)
 \openout1 = `Latex_Tutor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--23
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+("C:\Users\hou\Desktop\Baidu Map\1\2\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
 [1
 
-{C:/Users/hou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(Latex_Tutor.aux) ) 
+{C:/Users/hou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no œ in font cmr10!
+ [2]
+Missing character: There is no â in font cmti10!
+Missing character: There is no € in font cmti10!
+Missing character: There is no ™ in font cmti10!
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+[4] [5] (Latex_Tutor.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 132 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 217 strings out of 493634
- 2343 string characters out of 3140915
- 56604 words of memory out of 3000000
- 3682 multiletter control sequences out of 15000+200000
- 5867 words of font info for 21 fonts, out of 3000000 for 9000
+ 567 strings out of 493634
+ 6476 string characters out of 3140915
+ 59543 words of memory out of 3000000
+ 3996 multiletter control sequences out of 15000+200000
+ 9983 words of font info for 37 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 23i,4n,17p,137b,114s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfont
-s/cm/cmbxti10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfon
-ts/cm/cmcsc10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts
-/cm/cmr7.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm
-/cmss10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/
-cmti10.pfb>
-Output written on Latex_Tutor.pdf (2 pages, 98693 bytes).
+ 25i,4n,26p,172b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/c
+m/cmbxti10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/
+cm/cmcsc10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cms
+s10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmti10.
+pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmti7.pf
+b><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/symbols/msam10
+.pfb><C:/Users/hou/Desktop/Baidu Map/1/2/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Latex_Tutor.pdf (5 pages, 175258 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
