@@ -1,6 +1,27 @@
 \documentclass{article}
 \usepackage{pifont}
 \usepackage{amssymb}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[includemp,body={398pt,550pt},footskip=30pt,%
+marginparwidth=60pt,marginparsep=10pt]{geometry}
+\graphicspath{{C:\Users\hou\Desktop\Baidu Map\1\example\Latex_Tutor\picture}}
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem{dfn}{Definition}
+\theoremstyle{remark}
+\newtheorem{note}{Note}[section]
+\theoremstyle{plain}
+\newtheorem{lem}[thm]{Lemma}
+\newcommand{\halmos}{\rule{1mm}{2.5mm}}
+\renewcommand{\qedsymbol}{\halmos}
+\numberwithin{equation}{subsection}
+\graphicspath{C:\Users\hou\Desktop\Baidu Map\1\example\Latex_Tutor\picture}
 \begin{document}
 This is my \emph{first} document prepared in \LaTeX. I typed it on \today.
 \indent We have seen that to typeset something in \LaTeX, we type in the
@@ -194,6 +215,471 @@ Let’s review the notation
 	\item $[0,1]$ is a \emph{closed} interval
 \end{itemize}}
 \subsubsection{Rows and Columns}
+Let’s take stock of what we’ve learnt
+\begin{tabbing}
+	\hspace{1cm}\= \textbf{AbiWord}\quad\= A word processor\\[5pt]
+	\> \textbf{Emacs} \> A text editor\\[5pt]
+	\> \textbf{\TeX} \> A typesetting program\\[5pt]
+	\> $\mu_{max}$\> Maximal Reibwert\\[5pt]
+	\> \textbf{T}$_{b}$ \> Brake Torque
+\end{tabbing}
+\begin{tabbing}
+	\textbf{AbiWord}\quad\= : \= A word processor\kill\\
+	\textbf{\TeX}\quad \> : \> A typesetting program\\[5pt]
+	\textbf{Emacs}\quad \> : \> A text editor\\[5pt]
+	\> \> \quad\= a programming environment\\[5pt]
+	\> \> \> a mail reader\\[5pt]
+	\> \> \> and a lot more besides\\[5pt]
+	\textbf{AbiWord}\quad\> : \> A word processor
+\end{tabbing}
+The example below illustrates all the tabbing command we've discussed.
+\begin{tabbing}
+	Row 1 Column 1\hspace{2cm}
+	\= Row 1 Column 2\\[5pt]
+	\> Row 2 Column 2\hspace{1.5cm}\=Row 2 Column 3\+\+\\[5pt]
+	Row 3 Column 3\-\\[5pt]
+	Row 4 Column 2 \>Row 4 Column 3\\[5pt]
+	\< Row 5 Column 1 \> Row 5 Column 2 \>Row 5 Column 3\\[5pt]
+	Row 6 Column 2 \>Row 6 Column 3\-\\[5pt]
+	Row 7 Column 1 \> Row 7 Column 2 \>Row 7 Column 3\\[5pt]
+	Row 8 Column 1 \ Right\\[5pt]
+	Row 9 Column 1 \> and\ Row 9 Column 2\\[5pt]
+	\pushtabs
+	\quad\= Row 10 New Column 1\hspace{2.5cm}\= Row 10 New Column 2\\[5pt]
+	\> Row 11 New Column 2 \> Row 11 New Column 2\\[5pt]
+	\poptabs
+	Row 12 Old Column 1\> Row 12 Old Column 2\>Row 12 Old Column 3
+\end{tabbing}
+\textbf{Tables}
+\noindent The table below shows the sizes of the planets of our solar system.The {lr} specification immediately after the begin{tabular} indicates there are two columns in the table with the entries in the first column aligned on the left and the entries in the second column aligned on the right.\\
+\textbf{lcc} means 3 Columns = left, center, center.
+\begin{center}
+	\begin{tabular}{lcc}
+		Planet & Diameter(km) & Mass(T)\\[5pt]
+		Mercury & 4878 & 1\\
+		Venus & 12104 & 2\\
+		Earth & 12756 & 3\\
+		Mars & 6794 & 4 \\
+		Jupiter & 142984 & 5\\
+		Saturn & 120536 & 6\\
+		Uranus & 51118 & 7\\
+		Neptune & 49532 & 8\\
+		Pluto & 2274 & 9
+	\end{tabular}
+\end{center}
+As can be seen, Pluto is the smallest and Jupiter the largest\\
+Here is another example.
+\begin{center}
+	\begin{tabular}{lp{.8\linewidth}}
+		Planet & Features\\[5pt]
+		Mercury & Lunar like crust, crustal faulting, small magnetic
+		fields.\\
+		Venus & Shrouded in clouds, undulating surface with highlands,
+		plains, lowlands and craters.\\
+		Earth & Ocens of water filling lowlands between continents,
+		unique in supporting life, magnetic field.\\
+		Mars & Cratered uplands, lowland plains, volcanic regions.\\
+		Jupiter & Covered by clouds, dark ring of dust, magnetic field.\\
+		Saturn & Several cloud layers, magnetic field, thousands
+		of rings.\\
+		Uranus & Layers of cloud and mist, magentic field, some rings.\\
+		Neptune & Unable to detect from earth.\\
+		Pluto & Unable to detect from earth
+	\end{tabular}
+\end{center}
+Or another way:
+\begin{center}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		Planet & Diameter(km) & Mass\\
+		\hline
+		Mercury & 4878 & 1\\
+		Venus & 12104 & 2\\
+		Earth & 12756 & 3\\
+		Mars & 6794 & 4 \\
+		Jupiter & 142984 & 5\\
+		Saturn & 120536 & 6\\
+		Uranus & 51118 & 7\\
+		Neptune & 49532 & 8\\
+		Pluto & 2274 & 9\\
+		\hline
+	\end{tabular}
+\end{center}
+Here the first few lines and the last lines of the input are as below (the other lines are the same as in the previous example).multicolumn{2} means merge the last two columns. the cline{2-3} means draws a horizontal line from the 2nd to 3rd column. cline{i-j} draws a horizontal line from the i$^{th}$ column to the j$^{th}$ column.
+\begin{center}
+	\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		\multirow{2}{1.5cm}{\centering Planets} & \multicolumn{2}{c|}{Distance from sun (km)} & \multicolumn{2}{c|}{Mass from sun (km)}\\
+		\cline{2-3}           \cline{4-5}
+		& Maximum & Minimum & Maximum & Minimum\\
+    	\hline
+		Mercury & 4878 & 1 & 2 & 3\\
+		Venus  & 12104 & 2 & 3 & 2\\
+		Earth & 12756 & 3  & 1& 5\\
+		Mars & 6794 & 4    & 5 & 88\\
+		Jupiter & 142984 & 5 & 1 & 99\\
+		Saturn & 120536 & 6 & 3 & 21\\
+		Uranus & 51118 & 7 & 2 & 2\\
+		Neptune & 49532 & 8 & 8 & 0\\
+		Pluto & 2274 & 9 & 1 & 2\\
+		\hline
+	\end{tabular}
+\end{center}
+Next comes th \textbf{Array package}: The m{wd} specifier produces a column of width wd just like the p specifier, but with the text aligned vertically in the middle unlike the p specifier which aligns the text with the topline. (The table on the left, incidently, was produced by the same input as above but with p instead of m).\\
+\begin{center}
+	\begin{tabular}{|>{\bfseries}l|r|}
+		\hline
+		\multicolumn{1}{|m{1.5cm}|}{\centering Planet} &\multicolumn{1}{m{2.3cm}|}{\centering Mean distance from sun \\ (km)}\\
+		\hline
+		Mercury & 4878\\
+		Venus  & 12104\\
+		Earth & 12756\\
+		Mars & 6794 \\
+		Jupiter & 142984\\
+		Saturn & 120536\\
+		Uranus & 51118\\
+		Neptune & 49532\\
+		Pluto & 2274\\
+		\hline
+	\end{tabular}
+\end{center}
+\begin{center}
+	\begin{tabular}{|>{\bfseries}l|r|r|}
+		\hline
+		\multirow{3}{1.5cm}{\centering Planet}
+		& \multicolumn{2}{p{3.5cm}|}
+		{\centering Distance from sun \\ (million km)}\\
+		\cline{2-3}
+		& \multicolumn{1}{c|}{Maximum}
+		& \multicolumn{1}{c|}{Minimum}\\
+		\hline
+		Mercury & 69.4 & 46.8\\
+		Venus & 109.0 & 107.6\\
+		Earth & 152.6 & 147.4\\
+		Mars & 249.2 & 207.3\\
+		Jupiter & 817.4 & 741.6\\
+		Saturn & 1512.0 & 1346.0\\
+		Uranus & 3011.0 & 2740.0\\
+		Neptune & 4543.0 & 4466.0\\
+		Pluto & 7346.0 & 4461.0\\
+		\hline
+	\end{tabular}
+\end{center}
+\newpage
+
+\section{Tutorial VI}
+\subsection{Typesetting Mathematics}
+\subsubsection{The Basics}
+A mathematical expression occurring in running text (called in-text math) is produced by enclosing it between dollar signs. Thus to produce. The equation representing a straight line in the Cartesian plane is of the form $ax+by+c=0$, where $a$, $b$, $c$ are constants.\\
+This can be done by changing the input as follows:
+The equation representing a straight line in the Cartesian plane is
+of the form
+$$
+ax+by+c=0
+$$
+where $a$, $b$, $c$ are constants.
+Again \$\$ ax+by+c=0 \$\$ is the \TeX \ way of producing displayed math. LATEX has the constructs
+\[ a+b+c=0\] or \begin{displaymath} a+b+c = 0 \end{displaymath} also to do this.\\
+It is easily seen that $(x^m)^n=x^{mn}$.\\
+The sequence $(x_n)$ defined by
+$$
+x_1=1,\quad x_2=1,\quad x_n=x_{n-1}+x_{n-2}\;\;(n>2)
+$$
+is called the Fibonacci sequence.
+$$
+x_m^n\qquad x^n_m\qquad {x_m}^n\qquad {x^n}_m
+$$
+The sequence
+$$
+2\sqrt{2}\,,\quad 2^2\sqrt{2-\sqrt{2}}\,,\quad 2^3
+\sqrt{2-\sqrt{2+\sqrt{2}}}\,,\quad 2^4\sqrt{2-
+	\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}\,,\;\ldots
+$$
+converge to $\pi$.\\
+\\Next is Custom Commands:\\
+\newcommand{\vect}[2]{(#1_1,#1_2,\dots,#1_#2)}
+\begin{displaymath} \vect{x}{n},\\ \vect{y}{m},\\ \vect{a}{p} \end{displaymath}\\
+The equation representing a straight line in the Cartesian plane is
+of the form
+\begin{equation}
+	ax+by+c=0\tag{1-1}
+\end{equation}
+where $a$, $b$, $c$ are constants.
+\begin{equation}
+    ax+by+c=1
+\end{equation}
+\begin{subequations}
+	Maxwell's equations:
+	\begin{align}
+	B'&=-\nabla \times E,\\
+	E'&=\nabla \times B - 4\pi j,
+	\end{align}
+\end{subequations}
+\[
+z = \overbrace{
+	\underbrace{x}_\text{real} + i
+	\underbrace{y}_\text{imaginary}
+}^\text{complex number}
+\]
+\textbf{https://en.wikibooks.org/wiki/LaTeX/Advanced\_Mathematics}
+\begin{align*}
+\cosˆ2x+\sinˆ2x & = 1 & \coshˆ2x-\sinhˆ2x & = 1\\
+\cosˆ2x-\sinˆ2x & = \cos 2x & \coshˆ2x+\sinhˆ2x & = \cosh 2x
+\end{align*}
+
+\begin{equation}
+\begin{aligned}
+\cosˆ2x+sinˆ2x & = 1\\
+\cosˆ2x-\sinˆ2x & = \cos 2x
+\end{aligned}
+\qquad\text{and}\qquad
+\begin{aligned}
+\coshˆ2x-\sinhˆ2x & = 1\\
+\coshˆ2x+\sinhˆ2x & = \cosh 2x
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+|x| =
+\begin{cases}
+x & \text{if $x\ge 0$}\\
+-x & \text{if $x\le 0$}
+\end{cases}
+\end{equation}\\
+\subsubsection{The Matrix}
+The system of equations:
+\begin{align}
+x+y-z & = 1\\
+x-y+z & = 1\\
+x+y+z & = 1
+\end{align}
+can be written in matrix terms as
+\begin{equation}
+\begin{pmatrix}
+1 & 1 & -1\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}.
+\end{equation}
+Here, the matrix
+$\begin{pmatrix}
+1 & 1 & -1\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}$
+is invertible.\\
+A general $m\times n$ matrix is of the form:
+\begin{equation}
+\begin{pmatrix}
+a_{11} & a_{12} & \dots & a_{1n}\\
+a_{21} & a_{22} & \dots & a_{2n}\\
+\vdots & \vdots & \dots & \vdots \\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{pmatrix}
+\end{equation}
+\begin{equation*}
+\left.
+\begin{aligned}
+u_x & = v_y\\
+u_y & = -v_x
+\end{aligned}
+\right\}
+\quad\text{Cauchy-Riemann Equations}
+\end{equation*}\\
+\begin{equation}
+(x+y)ˆ2-(x-y)ˆ2=\left((x+y)+(x-y)\right)\left((x+y)-(x-y)\right)=4xy
+\end{equation}\\
+
+\begin{equation*}
+\left(\sum_{k=1}^n|x_ky_k|\right)^2\le
+\left(\sum_{k=1}^{n}|x_k|\right)\left(\sum_{k=1}^{n}|y_k|\right)
+\end{equation*}\\
+For $n$-tuples of complex numbers $(x_1,x_2,\dotsc,x_n)$ and
+$(y_1,y_2,\dotsc,y_n)$ of complex numbers
+\begin{equation*}
+\biggl(\sum_{k=1}^n|x_ky_k|\biggr)^2\le
+\biggl(\sum_{k=1}^{n}|x_k|\biggr)\biggl(\sum_{k=1}^{n}|y_k|\biggr)
+\end{equation*}\\
+\begin{equation}
+1-\binom{n}{1}\frac{1}{2}+\binom{n}{2}\frac{1}{2^2}-\dotsb
+-\binom{n}{n-1}\frac{1}{2^{n-1}}=0
+\end{equation}\\
+Since $(x_n)$ converges to $0$, there exists a positive integer $p$
+such that
+\begin{equation*}
+|x_n|<\tfrac{1}{2}\quad\text{for all $n\ge \pi$}
+\end{equation*}\\
+\newcommand{\abc}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
+\newcommand{\chssk}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+The Christoffel symbol $\genfrac{\{}{\}}{0pt}{}{ij}{k}$ of the second
+kind is related to the Christoffel symbol $\genfrac{[}{]}{0pt}{}{ij}{k}$
+of the first kind by the equation
+\begin{equation*}
+\chssk{ij}{k}=g^{k1}\abc{ij}{1}+g^{k2}\abc{ij}{2}
+\end{equation*}\\
+Thus we get:
+\begin{equation*}
+0\xrightarrow{} A\xrightarrow[\text{monic}]{f}
+B\xrightarrow[\hspace{7pt}\text{epi}\hspace{7pt}]{g}
+C\xrightarrow{}0
+\end{equation*}\\
+Euler not only proved that the series
+$\displaystyle\sum_{n=1}^\infty\frac{1}{n^2}$ converges, but also that $\sum_{n=1}^\infty\frac{1}{n^2}$
+\begin{equation*}
+\sum_{n=1}^\infty\frac{1}{n^2}=\frac{\pi^2}{6}
+\end{equation*}\\
+Thus
+$\lim\limits_{x\to\infty}\int_0^x\frac{\sin x}{x}\,\mathrm{d}x
+=\frac{\pi}{2}$
+and so by definition,
+\begin{align*}
+\int_0^\infty\frac{\sin x}{x}\,\mathrm{d}x=\frac{\pi}{2}
+\qquad\text{and}\qquad
+\int\limits_0^\infty\frac{\sin x}{x}\,\mathrm{d}x=\frac{\pi}{2}
+\end{align*}\\
+There is another reason for tweaking the math fonts. Recently, the International
+Standards Organization (ISO) has established the recognized typesetting standards in
+mathematics. Some of the points in it are,\\
+1. Simple variables are represented by italic letters as a, x.\\
+2. Vectors are written in boldface italic as $a, x$.\\
+3. Matrices may appear in sans serif as in $\mathbf{A,X}$.\\
+4. The special numbers e, i and the differential operator d are written in\ \textit{upright } roman. For example, \
+\newcommand{\me}{\mathrm{e}}$\me^2,$
+\newcommand{\mi}{\mathrm{i}}$\mi,$
+\newcommand{\diff}{\mathrm{d}}$\diff x$.
+
+\newpage
+\section{Tutorial VII}
+\subsection{Typesetting Theorems}
+In Mathematical documents we often have special statements such as \textit{axioms}(which are nothing but the assumptions made) and \textit{theorems}(which are the conclusions obtained, sometimes known by ohter names like propositions or lemmas). These are often typeset in different font to distinguish them from surrounding text and given a name and a number for subsequent reference.
+\begin{thm}[Euclid]
+	The sum of the angles of a triangle is $180^\circ$.
+\end{thm}
+\begin{thm}[Ly]
+	The sum of the angles of a normal triangle is $180^\circ$.
+\end{thm}
+\begin{dfn}
+	A triangle is the figure formed by joining each pair
+	of three non collinear points by line segments.
+\end{dfn}
+\begin{thm}[Euclid]
+	The number of primes is infinite.
+\end{thm}
+\begin{proof}
+	This follows easily from the equation
+	\begin{equation}
+	(x+y)ˆ2=xˆ2+yˆ2+2xy\tag*{\qed}
+	\end{equation}
+	\renewcommand{\qed}{}
+\end{proof}
+
+\newpage
+\section{Tutorial VIII}
+\subsection{Several Kinds of Boxes}
+\framebox{A few words of advice}\\[6pt]
+\fbox{Text in a box}
+\setlength\fboxrule{2pt}\setlength\fboxsep{2mm}
+\fbox{Text in a box}
+
+\newpage
+\section{Tutorial IX}
+\subsection{Floats}
+Figures are really problematical to present in a document because they never split between pages. This leads to bad page breaks which in turn leave blank space at the bottom of pages. For fine-tuning that document, the typesetter has to adjust the page breaks manually.
+But \LaTeX\ provides floating figures which automatically move to suitable locations.
+So the positioning of figures is the duty of \LaTeX.\\ 
+Floating figures are created by putting commands in a figure environment. The contents of the figure environment always remains in one chunk, floating to produce good page breaks. The following commands put the graphic from figure.eps inside a floating
+figure:\\
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=6.5cm]{picture/tex.png}
+	\caption{Tex Users Group}
+	\label{fig:tex1}
+\end{figure}\\
+\newpage
+\noindent Anotherway \LaTeX\ provides floating figures which automatically move to suitable locations.
+So the positioning of figures is the duty of \LaTeX.\\ 
+Floating figures are created by putting commands in a figure environment. The contents of the figure environment always remains in one chunk, floating to produce good page breaks. The following commands put the graphic from figure.eps inside a floating
+figure:\\
+\begin{figure}[htbp]
+	\centering
+	\subfigure[the 1st subfigure]{
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=1\textwidth]{picture/tex1.png} \\
+			\includegraphics[width=1\textwidth]{picture/tex2.png}
+		\end{minipage}
+	}
+	\subfigure[the 2rd subfigure]{
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=1\textwidth]{picture/tex1.png} \\
+			\includegraphics[width=1\textwidth]{picture/tex2.png}
+		\end{minipage}
+	}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
