@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.13)  20 MAY 2016 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.13)  20 MAY 2016 16:41
 entering extended mode
 **./Latex_Tutor.tex
 (Latex_Tutor.tex
@@ -435,14 +435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
-[10] [11]
-Missing character: There is no Ë in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no Ë in font cmr10!
-Missing character: There is no † in font cmr10!
-Missing character: There is no Ë in font cmr10!
-Missing character: There is no † in font cmr10!
- [12] [13] <picture/tex.png, id=61, 84.91725pt x 104.7915pt>
+[10] [11] [12] [13] <picture/tex.png, id=61, 84.91725pt x 104.7915pt>
 File: picture/tex.png Graphic file (type png)
 
 <use picture/tex.png>
@@ -505,7 +498,7 @@ sers/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Use
 rs/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/User
 s/hou/Desktop/Baidu Map/1/2/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
 Users/hou/Desktop/Baidu Map/1/2/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Latex_Tutor.pdf (15 pages, 302688 bytes).
+Output written on Latex_Tutor.pdf (15 pages, 302727 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
